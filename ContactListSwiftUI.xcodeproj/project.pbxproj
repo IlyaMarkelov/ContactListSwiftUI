@@ -11,6 +11,12 @@
 		987FB5C427AE834700128CDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987FB5C327AE834700128CDA /* ContentView.swift */; };
 		987FB5C627AE834800128CDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 987FB5C527AE834800128CDA /* Assets.xcassets */; };
 		987FB5C927AE834800128CDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 987FB5C827AE834800128CDA /* Preview Assets.xcassets */; };
+		987FB5D027AE836900128CDA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987FB5CF27AE836900128CDA /* DataManager.swift */; };
+		987FB5D227AE839C00128CDA /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987FB5D127AE839C00128CDA /* Contact.swift */; };
+		987FB5D427AE85DF00128CDA /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987FB5D327AE85DF00128CDA /* ContactList.swift */; };
+		987FB5D627AE8C3300128CDA /* SectionContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987FB5D527AE8C3300128CDA /* SectionContactList.swift */; };
+		987FB5D827AE8E1100128CDA /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987FB5D727AE8E1100128CDA /* ContactDetails.swift */; };
+		987FB5DA27AE8FB900128CDA /* PersonInfoRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987FB5D927AE8FB900128CDA /* PersonInfoRaw.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		987FB5C327AE834700128CDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		987FB5C527AE834800128CDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		987FB5C827AE834800128CDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		987FB5CF27AE836900128CDA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		987FB5D127AE839C00128CDA /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		987FB5D327AE85DF00128CDA /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		987FB5D527AE8C3300128CDA /* SectionContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionContactList.swift; sourceTree = "<group>"; };
+		987FB5D727AE8E1100128CDA /* ContactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
+		987FB5D927AE8FB900128CDA /* PersonInfoRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoRaw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,9 @@
 		987FB5C027AE834700128CDA /* ContactListSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				987FB5C127AE834700128CDA /* ContactListSwiftUIApp.swift */,
-				987FB5C327AE834700128CDA /* ContentView.swift */,
+				987FB5DB27AEAD3900128CDA /* Views */,
+				987FB5DC27AEAD4500128CDA /* Services */,
+				987FB5DD27AEAD5000128CDA /* Models */,
 				987FB5C527AE834800128CDA /* Assets.xcassets */,
 				987FB5C727AE834800128CDA /* Preview Content */,
 			);
@@ -65,6 +78,35 @@
 				987FB5C827AE834800128CDA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		987FB5DB27AEAD3900128CDA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				987FB5D727AE8E1100128CDA /* ContactDetails.swift */,
+				987FB5D527AE8C3300128CDA /* SectionContactList.swift */,
+				987FB5D927AE8FB900128CDA /* PersonInfoRaw.swift */,
+				987FB5C127AE834700128CDA /* ContactListSwiftUIApp.swift */,
+				987FB5C327AE834700128CDA /* ContentView.swift */,
+				987FB5D327AE85DF00128CDA /* ContactList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		987FB5DC27AEAD4500128CDA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				987FB5CF27AE836900128CDA /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		987FB5DD27AEAD5000128CDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				987FB5D127AE839C00128CDA /* Contact.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +180,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				987FB5C427AE834700128CDA /* ContentView.swift in Sources */,
+				987FB5D027AE836900128CDA /* DataManager.swift in Sources */,
+				987FB5D627AE8C3300128CDA /* SectionContactList.swift in Sources */,
+				987FB5DA27AE8FB900128CDA /* PersonInfoRaw.swift in Sources */,
+				987FB5D227AE839C00128CDA /* Contact.swift in Sources */,
+				987FB5D827AE8E1100128CDA /* ContactDetails.swift in Sources */,
 				987FB5C227AE834700128CDA /* ContactListSwiftUIApp.swift in Sources */,
+				987FB5D427AE85DF00128CDA /* ContactList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
